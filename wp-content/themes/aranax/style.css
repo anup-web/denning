@@ -1,0 +1,683 @@
+/*
+Theme Name: Aranax
+Theme URI: http://www.aranaxweb.com/wordpress-theme/university
+Description: A theme built for educational institute.
+Author: Sanjoy Chowdhury
+Author URI: http://www.aranaxweb.com/
+Version: 1.0
+Tags: responsive, gree, blue, bootstrap, wordpress, educational institute, college, university
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+
+@import url('css/bootstrap.min.css');
+ 
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+
+@import url(http://fonts.googleapis.com/css?family=Signika:300,700);
+
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
+
+
+body {
+	background: #191919;
+	color: #363636;
+	font: 15.75px/22px 'Arimo', sans-serif;
+}
+
+p {
+	margin-bottom: 18px;
+	text-align: justify;
+}
+
+input {
+	border-radius: 0 !important;
+	outline: none !important;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Signika', sans-serif;
+	color: #363636;
+	font-weight: normal;	
+}
+
+a {
+	color: #0093EE;
+	transition: all 0.5s ease 0s;
+}
+a:hover {
+	color: #363636;
+}
+
+.big-gap {
+	margin: 120px;	
+}
+.super-big-gap {
+	margin: 240px;	
+}
+
+.main-image {
+	background: rgba(0, 0, 0, 0) url("images/main-image.jpg") no-repeat scroll center -24px;
+	display: block;
+	position: relative;
+	z-index: 999;
+}
+
+.row.no-gutter {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.row.no-gutter [class*='col-'] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.logo {
+	background: transparent;
+	height: 192px;
+	width: 192px;
+}
+.logo img {
+	margin-top: 32px;
+	margin-left: 32px;
+}
+.home-top-menu {
+	/*background: rgba(120, 199, 228, 0.80);*/
+	background: transparent;
+	height: 192px;
+	width: 192px;
+}
+.home-top-menu ul {
+	padding-top: 41px;
+}
+
+.navbar {
+	border: 0;
+	min-height: 0;
+}
+.navbar-collapse {
+	padding: 0;
+}
+.navbar-nav > li > a {
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 400;
+	text-decoration: none;
+	letter-spacing: 1px;
+	padding: 2px 1px 3px;
+	display: block;
+	width: 192px;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > a:focus,
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus,
+.navbar-nav > .open > a,
+.navbar-nav > .open > a:hover,
+.navbar-nav > .open > a:focus {
+	background-color: transparent;
+	color: #00AFEF;
+}
+.navbar-nav .dropdown-menu {
+	background-color: rgba(57%, 79%, 96%, 0.95);
+	color: #00AFEF;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	margin-top: -3px;
+	text-transform: uppercase;
+}
+.navbar-nav .dropdown-menu > li > a {
+	color: #fff;
+	font-weight: 400;
+	text-decoration: none;
+	letter-spacing: 1px;
+	padding: 2px 10px 3px 10px;
+}
+.navbar-nav .dropdown-menu > li:hover > a,
+.navbar-nav .dropdown-menu > li:focus > a,
+.navbar-nav .dropdown-menu > li.active > a {
+	background-color: #00AFEF;
+}
+
+
+.home-top-contact {
+	height: 192px;
+	margin-left: 60px;
+	padding-top: 42px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+.home-top-contact .phone > span, .home-top-contact .email > a {
+	font-family: 'Signika', sans-serif;
+	font-size: 24px;
+	color: #FFF;
+	display: block;
+	margin-bottom: 16px;
+}	
+.home-top-contact .email > a {
+	font-size: 16px;
+	text-decoration: underline;
+	color: #FFF;
+}
+.home-top-contact .email > a:hover {
+	color: #00AFEF;
+}
+
+h1.tagline {
+	font-size: 52px;
+	line-height: 58px;
+	font-weight: 900;
+	color: #00AFEF;
+	text-shadow: 0px 1px 1px #000;
+	margin: 180px 0 10px 0;
+	text-transform: uppercase;
+}
+
+.home-join-btn {
+	position: absolute;
+	bottom: 80px;
+	right: 10px;
+}
+.home-join-btn a {
+	background-color: #FEE701;
+	color: #363636;
+	display: inline-block;
+	font-size: 18px;
+	font-family: 'Signika', sans-serif;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding: 8px 20px;
+	position: relative;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.5s ease 0s;
+	z-index: 50;
+}
+.home-join-btn a:hover {
+	background-color: #00AFEF;
+	color: #fff;
+}
+
+.why-denning-college {
+	background: #00AFEF;
+	min-height: 164px;
+}
+.why-denning-college h2 {
+	color: #FFF;
+}
+
+.welcome-news {
+	background: #FFF;
+}
+.welcome-news h3 {
+	font-size: 42px;
+	font-weight: 700;
+	text-shadow: 0px 1px 1px #999;
+}
+.welcome-news .welcome h3 {
+	color: #00AFEF;
+}	
+.welcome-news .welcome img {
+	float: left;
+	margin-right: 20px;
+}
+.author {
+	font-size: 18px;
+	font-weight: 700;
+	color: #00AFEF;
+}
+.author span {
+	display: block;
+	font-size: 14px;
+}
+
+.news {
+	background: #fff none repeat scroll 0 0;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	overflow: hidden;  
+	position: relative;  
+}
+.news h3 {
+	font-size: 32px;
+	font-weight: 300;
+}
+.news .carousel-controls {
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+.news .news-content {
+	background: #f5f5f5 none repeat scroll 0 0;
+	padding: 15px 5px;
+}
+.news h4.title {
+	font-size: 20px;
+	font-weight: 100;
+	margin: 0;
+}
+.news h4.title a {
+	color: #0093EE;
+}
+.news h4.title a:hover {
+	color: #363636;
+}
+.news .news-item {
+	margin-bottom: 0;
+	position: relative;
+}
+.news .news-item span {
+	font-size: 14px;
+	font-weight: 700;
+}
+.news .news-item p {
+	text-align: left;
+}
+
+.carousel-controls a .fa {
+	background: #dddddd none repeat scroll 0 0;
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	height: 20px;
+	margin-right: 0;
+	text-align: center;
+	transition: all 0.4s ease-in-out 0s;
+	width: 20px;
+}
+.carousel-controls a.next .fa {
+	padding-right: 1px;
+	padding-top: 2px;
+}
+.carousel-controls a.prev .fa {
+	padding-right: 1px;
+	padding-top: 2px;
+}
+.carousel-controls a:hover .fa {
+	background: #00AFEF none repeat scroll 0 0;
+}
+
+.notice-header {
+	color: #0093EE;
+	font-size: 22px;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.notice-date {
+	color: #0093EE;
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 6px;
+}
+
+.read-more {
+	display: block;
+	font-size: 13px;
+	transition: all 0.4s ease-in-out 0s;
+}
+.read-more .fa {
+	margin-left: 5px;
+	position: relative;
+	top: 1px;
+}
+.read-more:hover {
+	text-decoration: none;
+}
+
+.footer {
+	background-color: #2B2B2B;
+	padding: 16px 0; 
+}
+.footer-logo {
+	padding: 16px 0;
+}
+.footer h3 {
+	color: #fff;
+	font-weight: 700;
+	text-shadow: 0px 1px 1px #000;
+}
+.footer a {
+	color: #8C8C8C;
+	font-size: 14px;
+}
+.footer a:hover {
+	color: #D8D8D8;
+}
+
+.powered-by {
+	background: #191919;
+	color: #8C8C8C;
+	font-size: 12px;
+	padding: 8px 0;
+}
+.powered-by p {
+	margin: 0;
+}
+.powered-by a {
+	font-size: 12px;
+	color: #8C8C8C;	
+}
+
+.accordion-nav {
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #AABDCB;
+}
+.accordion-nav li {
+	list-style-type: none;
+	margin: 2px 0;
+}
+.accordion-nav li > ul {
+	margin-left: -24px;
+}
+.accordion-nav li a {
+	background-color: transparent;
+	font-weight: 500;
+}
+
+.accordion-nav li.current-menu-item a {
+	font-weight: 700;
+	color: #55C83A;
+}
+
+.notice-item .date {
+	color: #0093EE;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+}
+.notice-item .date .year {
+	display: block;
+}
+.notice-item h2 {
+	margin-top: 0;
+}
+
+
+.top-margin-lg {
+	margin-top: 120px;
+}
+.top-margin-md {
+	margin-top: 90px;
+}
+.top-margin-sm {
+	margin-top: 60px;
+}
+.top-margin-xs {
+	margin-top: 30px;
+}
+.no-top-margin {
+	margin-top: 0;
+}
+
+.bottom-margin-lg {
+	margin-bottom: 120px;
+}
+.bottom-margin-md {
+	margin-bottom: 90px;
+}
+.bottom-margin-sm {
+	margin-bottom: 60px;
+}
+.bottom-margin-xs {
+	margin-bottom: 30px;
+}
+.no-bottom-margin {
+	margin-bottom: 0;
+}
+
+#map {
+	width: 100%;
+	height: 360px;
+}
+
+
+select.form-error, textarea.form-error, input[type="text"].form-error, input[type="password"].form-error {
+	border: 2px solid #c00;
+}
+
+/**********************
+* PAGE 
+*/
+.page {
+	background-color: #FFF;
+}
+
+.page-header {
+	font-size: 48px;
+	font-weight: 700;
+	border-bottom: none;
+}
+
+.small-text {
+	font-size: 12px;
+}
+/**********************
+* ADMIN 
+*/
+
+.alert h4 {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+@media (max-width: 767px) {
+	.logo {
+		width: 100%;
+	}
+	.logo img {
+		margin-left: 64px;
+	}
+	.navbar-toggle {
+		background-color: transparent;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 0;
+		float: right;
+		margin-bottom: 8px;
+		margin-right: 8px;
+		margin-top: 8px;
+		padding: 9px 10px;
+		position: relative;
+	}
+	.navbar-nav {
+		margin: 0;
+	}
+	.navbar-toggle .icon-bar {
+		background-color: #78C7E4;
+		border-radius: 0;
+		display: block;
+		height: 2px;
+		width: 22px;
+	}
+	
+	.home-top-menu {
+		background: transparent;
+		height: auto;
+		width: 100%;
+	}
+	.home-top-menu ul {
+		padding-top: 0;
+	}
+	.navbar-nav > li > a {
+		width: 100%;
+	}
+	
+	h1.tagline {
+		font-size: 36px;
+		line-height: 36px;
+		margin: 60px 0;
+	}
+	.home-join-btn {
+		bottom: 10px;
+	}	
+	.why-denning-college h2 {
+		font-size: 22px;
+	}
+
+	.welcome-news h3 {
+		font-size: 28px;
+	}
+   
+	.news .news-item {
+		margin-bottom: 20px;
+	}
+	.footer {
+		padding: 0 15px;
+	}
+
+	
+}
+
+/* others style sheet */
+.box_input{border: 1px solid gray;
+font-size: 12px;
+margin-left: 20px;
+width: 90px;
+height: 30px;
+float: left;
+text-align: center;
+padding-top: 7px;}
+.borderless{
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+.borderless tr td{
+	border-top: none !important;
+    
+}
+.wpb_category_n_menu_accordion{margin-top: 40px;}
+
+.footer_menu .wpb_category_n_menu_accordion{margin-top:0px;}
+.footer_menu .wpb_category_n_menu_accordion > ul > li:not(:last-child) > a {
+    border-bottom: 1px solid #363636 !important;
+}
+.footer_menu .wpb_category_n_menu_accordion > ul > li > a {
+    font-size: 14px;    
+    padding: 5px 22px;    
+    color:#8C8C8C !important;
+	background:none;
+	line-height:auto;
+}
+.footer_menu .wpb_category_n_menu_accordion ul > li li {
+    margin: 0 !important;
+    background: none;
+}
+.footer_menu .wpb_category_n_menu_accordion li a {
+    font-size: 12px;
+    line-height: auto;
+    padding: 5px 22px;    
+    -o-transition: color .2s linear,background .2s linear;
+    -moz-transition: color .2s linear,background .2s linear;
+    -webkit-transition: color .2s linear,background .2s linear;
+    transition: color .2s linear,background .2s linear;
+    
+}
+.footer_menu .wpb_category_n_menu_accordion ul > li li a {
+    color: #8C8C8C;
+	border-bottom: 1px solid #363636 !important;
+}
+
+.academics_footer ul li{border-bottom: 1px solid #363636 !important;}
+.admission_footer ul li {
+    border-bottom: 1px solid #363636 !important;
+    line-height: 30px;
+}
+.academics_footer ul li {
+    border-bottom: 1px solid #363636 !important;
+    line-height: 30px;
+}
+.links_footer ul li {
+    border-bottom: 1px solid #363636 !important;
+    line-height: 30px;
+}
+
+.footer_menu .wpb_category_n_menu_accordion > ul > li > a:hover {
+  background-color:#2B2B2B;
+  color: #fff;
+}
+
+
+/* others style */
+
+.employee_deatlis_all{
+	float: left;
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+}
+
+.employee_details ul{
+	list-style: outside none none;
+	padding: 0px;
+	margin: 0px 0px 0px 20px;
+}
+.employee_details ul li{
+	float: none;
+	margin: 0px;
+	padding: 0px 0px 4px;
+	}
+.staff_img{
+	float: left;
+}
+
+.staff_img img{
+	border: 4px solid rgb(207, 207, 207);
+    width: 70px;
+    height: auto;
+}
+.employee_details{
+	float: left; margin: 0; padding: 0;
+}
+
+#myContent{
+	display: none;
+	position: relative;
+}
+
+.more_employeecontent{	
+	padding: 5px 10px;
+	display: block;
+	margin-top:80px;
+}
+
+.more_button{
+	float: right;
+}
+.more_button i{
+	font-size: 30px;
+}
+.employee_details_part{	
+	border-bottom: 1px solid rgb(222, 222, 222);
+	padding: 10px 0px;
+	background-color: rgb(243, 243, 243);
+}
+
+
+
+
+
